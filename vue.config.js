@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: 'todo-app'
-  }
+  publicPath: process.env.NODE_ENV === "production" ? " Todo-App" : "./src/App.vue",
+};
